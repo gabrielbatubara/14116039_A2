@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Latihan 1</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+#header {
+  background-image:url('img/header.jpg');
+  background-size: cover;
+  padding: 15px;
+  text-align: center;
+}
+#footer {
+  background-color:rgb(0, 0, 0);
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  padding: 15px;
+}
+
+.topnav {
+  background-color: rgb(0, 0, 0);
+  overflow: hidden;
+}
+
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  border-bottom: 3px solid transparent;
+}
+
+.topnav a:hover {
+  border-bottom: 3px solid red;
+}
+
+.topnav a.active {
+  border-bottom: 3px solid red;
+}
+
+
+nav {
+  float: left;
+  width: 30%;
+  padding: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+}
+
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+  .garis { 
+  border: 10px double black; 
+  }
+
+</style>
+
+</head>
+<body>
+<div id="header">
+  <h1>Praktikum - 1 Pemrograman Web</h1>
+  <h3>Belajar membuat layout website sederhana menggunakan html5</h3>
+</div>
+
+<div class="topnav">
+  <a class="active" href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#contact">Contact</a>
+</div>
+<div id="content">
+<section>
+  <nav>
+    <ul>
+      <li>
+      <img class="garis" style="display: block; margin: 0 auto; text-align: center;" src="img/Html.png"  width="50%" height="auto" alt="Image">
+      </li>
+    </ul>
+  </nav>
+  <article>
+    <h1>HTML</h1>
+    <p>Apa itu HTML?</p>
+    <p>
+		HTML adalah bahasa markup untuk menggambarkan dokumen web (halaman web ).
+		<br>• HTML merupakan singkatan dari Hyper Text Markup Language
+		<br>• Sebuah bahasa markup terdiri dari seperangkat tag markup
+		<br>• Dokumen HTML dijelaskan oleh tag HTML
+		<br>• Setiap tag HTML menjelaskan isi dokumen yang berbeda
+		<br>Adapun versi dari HTML sekarang sudah mencapai versi ke -5.
+		</p>
+		<p>
+			HTML5 adalah sebuah bahasa markah untuk menstrukturkan dan menampilkan isi dari World Wide Web, 
+			sebuah teknologi inti dari Internet. HTML5 adalah revisi kelima dari HTML (yang pertama kali diciptakan 
+			pada tahun 1990 dan versi keempatnya, HTML4, pada tahun 1997[1]) dan hingga bulan Juni 2011 masih dalam pengembangan. 
+			Tujuan utama pengembangan HTML5 adalah untuk memperbaiki teknologi HTML agar mendukung teknologi multimedia terbaru, 
+			mudah dibaca oleh manusia dan juga mudah dimengerti oleh mesin.
+    </p>
+    <p>
+      HTML5 merupakan salah satu karya Konsortium World Wide Web (World Wide Web Consortium, W3C) untuk mendefinisikan 
+      sebuah bahasa markah tunggal yang dapat ditulis dengan cara HTML ataupun XHTML. HTML5 merupakan jawaban atas pengembangan 
+      HTML 4.01 dan XHTML 1.1 yang selama ini berjalan terpisah, dan diimplementasikansecara berbeda-beda oleh banyak perangkat 
+      lunak pembuat web.
+    </p>
+  </article>
+</section> 
+<div id ="footer">
+  Copyright &copy; 2020 Designed by Gabriel Batubara - 14116039.
+  <span><a href="#header">Back to top</a></span>
+</div>
+</div>
+
+</body>
+</html>
