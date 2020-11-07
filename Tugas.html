@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Tugas Praktikum Pemrograman Web</title>
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+
+		img {
+			height: 250px;
+			width: 100%;
+		}
+
+		.tab-content {
+			display: none;
+		}
+
+		.tab-content:target {
+			display: block;
+		}
+
+        html {
+        font-family: "Lucida Sans", sans-serif;
+        }
+
+        header {
+        background-color: white;
+        background-size: cover;
+        padding: 15px;
+        text-align: center;
+        }
+
+        footer {
+        background-color:black;
+        color: #a08b8b;
+        text-align: center;
+        font-size: 12px;
+        padding: 15px;
+        }
+
+        nav {
+        float: left;
+        background-color: darkgrey;
+        width: 30%;
+        padding: 20px;
+        }
+
+        nav ul {
+        list-style-type: none;
+        padding: 0;
+        }
+
+        article {
+        background-color: whitesmoke;
+        float: left;
+        padding: 20px;
+        width: 70%;
+        }
+
+        section {
+			display: flex;
+		}
+
+        section:after {
+        content: "";
+        display: table;
+        clear: both;
+        }
+
+        .garis { 
+        border: 10px double black; 
+        }
+
+</style>
+</head>
+
+<body>
+	<header>
+		<img class="garis" src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="">
+	</header>
+
+	<section>
+		<nav>
+			<ul>
+				<li><a href="#artikel">Artikel</a></li>
+				<li><a href="#form">Form</a></li>
+			</ul>
+		</nav>
+
+		<article>
+			<p id="artikel" class="tab-content">
+                HTML5 adalah sebuah bahasa markah untuk menstrukturkan dan menampilkan isi dari World Wide Web, sebuah teknologi inti dari Internet. HTML5 adalah revisi kelima dari HTML (yang pertama kali diciptakan pada tahun 1990 dan versi keempatnya, HTML4, pada tahun 1997[1]) dan hingga bulan Juni 2011 masih dalam pengembangan. Tujuan utama pengembangan HTML5 adalah untuk memperbaiki teknologi HTML agar mendukung teknologi multimedia terbaru, mudah dibaca oleh manusia dan juga mudah dimengerti oleh mesin.
+                HTML5 merupakan salah satu karya Konsortium World Wide Web (World Wide Web Consortium, W3C) untuk mendefinisikan sebuah bahasa markah tunggal yang dapat ditulis dengan cara HTML ataupun XHTML. HTML5 merupakan jawaban atas pengembangan HTML 4.01 dan XHTML 1.1 yang selama ini berjalan terpisah, dan diimplementasikansecara berbeda-beda oleh banyak perangkat lunak pembuat web.
+			</p>
+			<form action="" id="form" class="tab-content">
+				<h2>Form Pendaftaran</h2>
+				<label for="name">Nama:</label>
+				<input type="text" id="name" name="name" placeholder="Jhon"><br><br>
+				<label for="gender">Jenis Kelamin:</label>
+				<input type="radio" id="male" name="gender" value="male" checked>
+				<label for="male">Pria</label>
+				<input type="radio" id="female" name="gender" value="female">
+				<label for="female">Wanita</label><br><br>
+				<label for="address">Alamat:</label>
+                <input type="text" id="address" name="address" placeholder="Jl. Raya"><br><br>
+                <label for="address">Email:</label>
+				<input type="email" id="email" name="email" placeholder="ini@email.com"><br><br>
+				<input type="submit" value="Daftar">
+			</form>
+		</article>
+	</section>
+
+	<footer>
+		Created by Gabriel Batubara - 14116039 - Teknik Informatika - Institut Teknologi Sumatera &copy;
+	</footer>
+
+</body>
+
+</html>
